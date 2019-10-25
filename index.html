@@ -1,0 +1,42 @@
+<!--
+    Open Weather API
+    Cameron Stapp
+    10/21/2019
+    CIS-131
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Weather | Home</title>
+</head>
+<body>
+    <div id="pageContainer">
+        <h1>Local Weather App</h1>
+        <script>
+            callNewData();
+        </script>
+        <h2 id="city">Your Town</h2>
+        <div class="weather">
+            <ul>
+                <li id="temp"></li>
+                <li id="high"><span><b>Temperature High: </b></span></li>
+                <li id="low"><span><b>Temperature Low: </b></span></li>
+                <li id="humidity"><span><b>Humidity: </b></span></li>
+                <li id="skyConditions"><span><b>Sky Condition: </b></span></li>
+                <li id="wind"><span><b>Wind Speed: </b></span></li>
+            </ul>
+        </div>
+        <div class="newUpdate">
+            <button type="button" onclick="callNewData()">Update</button>
+        </div>
+        <footer>Cameron Stapp &bull; CIS-131</footer>
+    </div>
+    
+</body>
+</html>

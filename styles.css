@@ -11,10 +11,11 @@
 }
 
 #pageContainer {
+    display: block;
     position: relative;
     min-height: 100%;
     height: 100%;
-    justify-content: center;
+    text-align: center;
 
 }
 
@@ -24,6 +25,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(29, 33, 46);
     color: white;
+    text-align: center;
 }
 h1, h2 {
     display: block;
@@ -38,7 +40,7 @@ span {
 }
 
 .weather, ul {
-    display: block;
+    display: inline-block;
     text-align: center;
     padding-top: 25px;
     line-height: 5rem;
@@ -47,7 +49,7 @@ span {
 }
 
 button {
-    display: block;
+    display: inline-block;
     margin: 100px auto;
     width: 350px;
     height: 100px;
